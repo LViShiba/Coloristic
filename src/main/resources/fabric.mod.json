@@ -1,0 +1,50 @@
+{
+	"schemaVersion": 1,
+	"id": "coloristic",
+	"version": "${version}",
+	"name": "Coloristic",
+	"description": "A mod that adds color correction into Minecraft.",
+	"authors": [
+		"Almer"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/coloristic-fork",
+		"issues": "https://github.com/LViShiba/Coloristic/issues"
+	},
+	"license": "Code [CC-BY-ND-4.0], Textures [ARR]",
+	"icon": "assets/coloristic/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"lv.almer.coloristic.Coloristic"
+		],
+		"client": [
+			"lv.almer.coloristic.ColoristicClient"
+		],
+		"modmenu": [
+			"lv.almer.coloristic.client.ColoristicModMenu"
+		]
+	},
+	"mixins": [
+		"coloristic.mixins.json",
+		"coloristic-modmenu.mixins.json"
+	],
+	"custom": {
+		"credits": {
+			"Maintainer": "LViShiba"
+		},
+		"modmenu": {
+			"links": {
+				"modmenu.source": "https://github.com/LViShiba/Coloristic",
+				"modmenu.modrinth": "https://modrinth.com/mod/coloristic-fork",
+				"modmenu.discord": "https://discord.com/invite/kNsbyRQrUg"
+			}
+		}
+	},
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

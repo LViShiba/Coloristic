@@ -1,0 +1,12 @@
+{
+    "required": false,
+    "package": "lv.almer.coloristic.mixin",
+    "compatibilityLevel": "JAVA_21",
+    "client": [
+        "ModMenuCreditsMixin",
+        "ModMenuAuthorLineMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}
